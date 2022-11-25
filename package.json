@@ -1,0 +1,13 @@
+{
+  "name": "conservatoire",
+  "source": "src/pug/pages/index.pug",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.8.0",
+    "parcel": "^2.8.0",
+    "sharp": "^0.31.2"
+  }
+}
