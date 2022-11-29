@@ -153,6 +153,12 @@ template, [hidden] {
   display: none;
 }
 
+.listUnstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -222,11 +228,86 @@ img, svg {
   z-index: 2;
   background-color: #fafafa;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 12px 24px;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.header__start, .header__end {
+  align-items: center;
+  display: flex;
+}
+
+.header__end {
+  flex-direction: row-reverse;
+}
+
+.header__search {
+  width: 80px;
+}
+
+.header__logo {
+  z-index: 20;
+  position: relative;
+}
+
+.header__logo .style-svg {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.footer {
+  color: #fafafa;
+  background-color: #1c1514;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.footer > div svg path {
+  fill: #fafafa;
+}
+
+.footer__list {
+  gap: 10px;
+  display: flex;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  letter-spacing: .0625rem;
+  font-size: .6875rem;
+}
+
+.footer__address p {
+  margin: 0;
+}
+
+.footer__gb {
+  width: 100px;
+}
+
+.footer > :not(:first-child) {
+  margin-top: 24px;
+}
+
+.grid {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.grid.-fullHeight {
+  height: 100vh;
+  grid-template-rows: 4fr 1fr;
+  gap: 48px;
+  display: grid;
 }
 
 .menu {
@@ -255,6 +336,48 @@ img, svg {
 
 .menuBurger__bar:after {
   top: 10px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__header {
+  color: #fafafa;
+  align-self: end;
+}
+
+.hero__subtitle {
+  text-transform: uppercase;
+  letter-spacing: .0625rem;
+  font-size: .8125rem;
+}
+
+.hero__img {
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+.chapo {
+  background-color: #fafafa;
+  align-items: center;
+  margin-left: -24px;
+  margin-right: -24px;
+  display: grid;
+}
+
+.chapo.-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.chapo__link {
+  color: #1c1514;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.e8265c92.css.map */
