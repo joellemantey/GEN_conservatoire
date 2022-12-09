@@ -164,28 +164,28 @@ template, [hidden] {
 }
 
 body {
-  background-color: #fafafa;
   font-family: Mulish, sans-serif;
-  font-size: .8125rem;
+  font-size: clamp(.8125rem, .8125rem + 2 * ( ( 100vw - 640px ) / 656 ), .9375rem);
+  background-color: #fafafa;
   line-height: 1.6;
 }
 
 h1, h2 {
-  font-family: Space Mono, courier;
+  font-family: Space Mono, monospace;
   font-weight: normal;
   line-height: 1.1;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 2.25rem + 28 * ( ( 100vw - 640px ) / 656 ), 4rem);
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: clamp(1.75rem, 1.75rem + 4 * ( ( 100vw - 640px ) / 656 ), 2rem);
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: clamp(1.125rem, 1.125rem + 6 * ( ( 100vw - 640px ) / 656 ), 1.5rem);
   line-height: 1.4;
 }
 
@@ -282,8 +282,8 @@ img, svg {
 
 .footer__title {
   text-transform: uppercase;
+  font-size: clamp(.6875rem, .6875rem + 2 * ( ( 100vw - 640px ) / 656 ), .8125rem);
   letter-spacing: .0625rem;
-  font-size: .6875rem;
 }
 
 .footer__address p {
@@ -349,8 +349,8 @@ img, svg {
 
 .hero__subtitle {
   text-transform: uppercase;
+  font-size: clamp(.6875rem, .6875rem + 2 * ( ( 100vw - 640px ) / 656 ), .8125rem);
   letter-spacing: .0625rem;
-  font-size: .8125rem;
 }
 
 .hero__img {
@@ -378,6 +378,39 @@ img, svg {
   align-items: center;
   text-decoration: none;
   display: flex;
+}
+
+.btn {
+  color: #1c1514;
+  text-transform: uppercase;
+  font-size: clamp(.6875rem, .6875rem + 2 * ( ( 100vw - 640px ) / 656 ), .8125rem);
+  letter-spacing: .0625rem;
+  border: 1px solid #feaa9b;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  padding: 16px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  display: inline-flex;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 0 8px #feaa9b;
+}
+
+.btn.-outlined {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+
+.btn.-outlined svg path {
+  fill: #fafafa;
+}
+
+.btn.-outlined:hover {
+  box-shadow: inset 0 0 0 8px #fafafa;
 }
 
 /*# sourceMappingURL=index.e8265c92.css.map */
